@@ -1,8 +1,11 @@
+import { BrowserRouter } from "react-router";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <>
-      <h1>Mira que Lindo</h1>
-    </>
+    <BrowserRouter>
+      <Header />
+    </BrowserRouter>
   );
 }
 
