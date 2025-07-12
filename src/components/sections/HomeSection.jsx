@@ -6,7 +6,7 @@ function HomeSection() {
   return (
     <section id="inicio" className="py-20 px-4">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-32 items-center">
           {/* Izquierda */}
           <div className="space-y-8">
             <div className="space-y-4">
