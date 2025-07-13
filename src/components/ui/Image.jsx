@@ -1,33 +1,33 @@
 import { useState } from "react";
 import { Image as ImageIcon } from "lucide-react";
 
+/**
+ * Image fallback que NO define su propio border-radius ni shadow:
+ * esas clases vienen del contenedor padre.
+ */
 function Image({ src, alt, width, height, className = "" }) {
   const [hasError, setHasError] = useState(false);
 
-  // Si no hay src o hubo error, mostramos el placeholder
+  // Placeholder (sin rounded ni shadow)
   if (!src || hasError) {
     return (
       <div
         className={`
           ${className}
-          bg-gray-50
-          rounded-3xl
-          shadow-2xl
+          bg-gray-100       /* color de fondo del placeholder */
           flex items-center justify-center
           overflow-hidden
         `}
         style={{ width, height }}
       >
-        <div className="flex flex-col items-center">
-          <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
-            <ImageIcon className="w-8 h-8 text-gray-300" />
-          </div>
+        <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center">
+          <ImageIcon className="w-8 h-8 text-gray-400" />
         </div>
       </div>
     );
   }
 
-  // Si la imagen carga bien
+  // Imagen cargada (objeto cover)
   return (
     <img
       src={src}
