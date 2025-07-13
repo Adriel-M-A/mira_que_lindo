@@ -29,3 +29,13 @@ html {
   scrollbar-width: thin; /* grosor más delgado */
   scrollbar-color: #c1c1c1 #f0f0f0; /* thumb color + track color */
 }
+
+/* Sobrescribo el ancho máximo de .container */
+.container {
+  max-width: 1400px;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
