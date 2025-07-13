@@ -2,6 +2,7 @@
 import Header from "../layout/Header";
 import HomeSection from "../sections/HomeSection";
 import AgeCategories from "../sections/AgeCategories";
+import Footer from "../layout/Footer";
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
       <Header />
       <HomeSection />
       <AgeCategories />
+      <Footer />
     </div>
   );
 }
