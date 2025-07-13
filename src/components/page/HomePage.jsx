@@ -1,7 +1,7 @@
-// src/components/pages/HomePage.jsx
 import Header from "../layout/Header";
 import HomeSection from "../sections/HomeSection";
 import AgeCategories from "../sections/AgeCategories";
+import FeaturedProducts from "../sections/FeaturedProducts";
 import Footer from "../layout/Footer";
 
 function HomePage() {
@@ -10,6 +10,7 @@ function HomePage() {
       <Header />
       <HomeSection />
       <AgeCategories />
+      <FeaturedProducts />
       <Footer />
     </div>
   );
