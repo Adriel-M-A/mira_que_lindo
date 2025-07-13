@@ -1,4 +1,6 @@
-import { Card, CardContent } from "../ui/Card";
+// src/components/sections/ProductCard.jsx
+import { Card } from "../ui/Card";
+import { CardContent } from "../ui/Card";
 import Button from "../ui/Button";
 import { Heart, ShoppingCart } from "lucide-react";
 import Image from "../ui/Image";
@@ -16,15 +18,14 @@ function ProductCard({ product }) {
     isNew,
   } = product;
 
-  // cálculo de descuento en porcentaje
   const discountPercent = originalPrice
     ? Math.round(((originalPrice - price) / originalPrice) * 100)
     : null;
 
   return (
-    <Card className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0 overflow-hidden">
-      {/* Imagen + badge Nuevo + favorito */}
-      <div className="relative">
+    <Card className="group bg-gray-50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0 overflow-hidden">
+      {/* ► Contenedor de imagen con sólo esquinas superiores redondeadas */}
+      <div className="relative bg-gray-100 rounded-t-3xl overflow-hidden">
         <Image
           src={image}
           alt={name}
@@ -41,14 +42,14 @@ function ProductCard({ product }) {
         <Button
           variant="ghost"
           size="icon"
-          className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-600 hover:text-pink-400"
+          className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-600 hover:text-pink-400 rounded-full"
         >
           <Heart className="w-4 h-4" />
         </Button>
       </div>
 
-      {/* Contenido */}
-      <CardContent className="p-6">
+      {/* ► Contenido con fondo blanco y esquinas inferiores redondeadas */}
+      <CardContent className="p-6 bg-white rounded-b-3xl">
         {/* Categoría */}
         <div className="mb-2">
           <span className="text-xs font-medium text-purple-500 bg-purple-50 px-2 py-1 rounded-full">
