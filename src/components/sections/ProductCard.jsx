@@ -1,4 +1,3 @@
-// src/components/sections/ProductCard.jsx
 import { Card } from "../ui/Card";
 import { CardContent } from "../ui/Card";
 import Button from "../ui/Button";
