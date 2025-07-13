@@ -1,10 +1,6 @@
 import ProductCard from "./ProductCard";
 import Button from "../ui/Button";
-
-// Aquí simulas tu llamada a API; en producción podrías reemplazarlo por un fetch/axios
-const products = [
-  /* ...tus 6 productos... */
-];
+import products from "../../data/products";
 
 function FeaturedProducts() {
   return (
