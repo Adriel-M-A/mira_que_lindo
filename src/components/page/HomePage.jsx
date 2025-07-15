@@ -2,6 +2,7 @@ import Header from "../layout/Header";
 import HomeSection from "../sections/HomeSection";
 import AgeCategories from "../sections/AgeCategories";
 import FeaturedProducts from "../sections/FeaturedProducts";
+import Testimonials from "../sections/Testimonials";
 import Footer from "../layout/Footer";
 
 function HomePage() {
@@ -11,6 +12,7 @@ function HomePage() {
       <HomeSection />
       <AgeCategories />
       <FeaturedProducts />
+      <Testimonials />
       <Footer />
     </div>
   );
