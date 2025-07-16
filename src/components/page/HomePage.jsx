@@ -3,6 +3,7 @@ import HomeSection from "../sections/HomeSection";
 import AgeCategories from "../sections/AgeCategories";
 import FeaturedProducts from "../sections/FeaturedProducts";
 import Testimonials from "../sections/Testimonials";
+import Newsletter from "../sections/Newsletter";
 import Footer from "../layout/Footer";
 
 function HomePage() {
@@ -13,6 +14,7 @@ function HomePage() {
       <AgeCategories />
       <FeaturedProducts />
       <Testimonials />
+      <Newsletter />
       <Footer />
     </div>
   );
