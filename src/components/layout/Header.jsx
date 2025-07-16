@@ -1,5 +1,5 @@
-import Logo from "../Logo";
-import Navigation from "../Navigation";
+import Logo from "../layout/Logo";
+import Navigation from "../layout/Navigation";
 import IconButton from "../ui/IconButton";
 import { ShoppingBag, User } from "lucide-react";
 
